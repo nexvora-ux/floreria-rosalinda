@@ -1,0 +1,20 @@
+FLORERÍA ROSALINDA – TIENDA ONLINE
+==================================
+
+Este paquete contiene una web completa para hosting HTML (cPanel, Apache, Nginx), con 346 fotografías reales en 26 categorías.
+
+PUBLICAR EN CPANEL
+1. Descomprime el ZIP en tu computadora.
+2. Abre "config.js" con Bloc de notas y completa los datos reales: "whatsapp" (519XXXXXXXX), "telefono" y redes sociales.
+3. Sube el CONTENIDO de la carpeta rosalinda_publicar/ a public_html/ de tu dominio, o a una subcarpeta para probarla.
+4. Comprueba el sitio desde https://tudominio.com y revisa los pedidos por WhatsApp.
+5. Mantén juntos index.html, styles.css, app.js, config.js, catalogo.json y la carpeta assets/.
+
+IMPORTANTE
+- No hay precios en ningún producto.
+- Los botones pedir por WhatsApp NO enviarán mensajes si no completas el número en config.js.
+- Los nombres automáticos de productos son "Categoría · Modelo N". Cada producto también tiene un código coincidente con el número de la foto.
+- Si ya existe un sitio en public_html, realiza una copia de seguridad antes de reemplazar archivos.
+- El archivo catalogo.json se carga mediante fetch, por lo que debes probarla en servidor web. Abrir index.html con doble clic (file://) puede bloquear el catálogo. Para prueba local: python -m http.server 8000 dentro de la carpeta.
+- Las fotos originales están representadas como archivos WebP optimizados en assets/productos.
+- No hay compras ni pagos online: los pedidos se gestionan por WhatsApp.
