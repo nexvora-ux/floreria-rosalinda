@@ -25,6 +25,31 @@
 </section>
 <section id="catalogSection"><div class="section-heading"><div><span class="eyebrow">DESCUBRE NUESTROS ARREGLOS</span><h2>Explora nuestras <em>categorías</em></h2></div><button class="all-cats" id="allCats">Ver todas <span>→</span></button></div><div class="chip-wrap"><button id="chipPrev" class="chip-arrow" aria-label="Deslizar a la izquierda">‹</button><div class="chips" id="chips" role="group" aria-label="Categorías de productos"></div><button id="chipNext" class="chip-arrow" aria-label="Deslizar a la derecha">›</button></div><div class="results-title"><div><h2 id="resultTitle">Nuestros arreglos</h2><p id="resultSubtitle">Descubre el detalle perfecto para cada ocasión</p></div><span class="result-count" id="resultCount"></span></div><div class="product-grid" id="grid"></div><div class="load-wrap"><button id="loadMore" class="load-more">Ver más productos ↓</button></div><div id="empty" class="empty" hidden>No encontramos productos con esa búsqueda. Prueba con otra palabra o categoría.</div></section>
 <section class="closing"><div><span>✿ UN DETALLE DICE MÁS QUE MIL PALABRAS</span><h2>¿Necesitas ayuda para elegir?</h2><p>Cuéntanos la ocasión y te ayudamos a encontrar el arreglo ideal.</p></div><button class="pill" data-whatsapp="general">Consultar por WhatsApp ↗</button></section></main>
-<footer><div class="footer-brand"><img src="assets/logo.png" alt="Rosalinda"/><div><b>Florería Rosalinda</b><span>Regala emociones, comparte momentos.</span></div></div><div class="footer-links"><span>Síguenos:</span><a data-social="facebook" aria-label="Facebook" href="#">Facebook</a><a data-social="instagram" aria-label="Instagram" href="#">Instagram</a><a data-social="tiktok" aria-label="TikTok" href="#">TikTok</a></div><div class="footer-tools"><button type="button" id="footerShareRosalinda">Compartir enlace y QR</button><button type="button" id="footerInstallRosalinda">Instalar tienda</button></div><small>© <span id="year"></span> Florería Rosalinda. Todos los derechos reservados.</small></footer>
+<footer class="rosalinda-footer" id="ubicacion">
+  <div class="footer-main">
+    <div class="footer-column footer-identity">
+      <div class="footer-logo"><img src="assets/logo.png" alt="Logo de Florería Rosalinda" loading="lazy"><div><b>Florería Rosalinda</b><span>Regala emociones, comparte momentos.</span></div></div>
+      <p>Flores y arreglos para celebrar, agradecer y acompañar cada momento importante.</p>
+      <button class="footer-main-wa" type="button" data-whatsapp="general">✿ Escríbenos por WhatsApp ↗</button>
+    </div>
+    <div class="footer-column footer-location">
+      <h3><span aria-hidden="true">📍</span> Visita nuestra florería</h3>
+      <p class="footer-address">Av. Metropolitana con Los Ángeles</p>
+      <p class="footer-reference">Frente al Mercado Unicachi<br>Comas, Lima, Perú</p>
+      <a class="footer-map-btn" href="https://www.google.com/maps?q=-11.9380625,-77.0679375" target="_blank" rel="noopener noreferrer" aria-label="Cómo llegar a Florería Rosalinda en Google Maps">📍 Cómo llegar con Google Maps ↗</a>
+      <a class="footer-tel" href="tel:+51907541882">☎ 907 541 882</a>
+    </div>
+    <div class="footer-column footer-community">
+      <h3>Síguenos y comparte</h3>
+      <p>Descubre los arreglos de Rosalinda y comparte nuestra tienda con quien más quieres.</p>
+      <div class="footer-socials">
+        <a data-platform="facebook" href="https://nexvora-ux.github.io/floreria-rosalinda/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook" class="social-link facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.5-3.9 3.78-3.9 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.45 2.89h-2.33v6.99A10 10 0 0 0 22 12Z"/></svg></a>
+        <a data-platform="instagram" href="https://nexvora-ux.github.io/floreria-rosalinda/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram" class="social-link instagram"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><rect x="2.7" y="2.7" width="18.6" height="18.6" rx="5.4"/><circle cx="12" cy="12" r="4"/><circle cx="17.7" cy="6.6" r=".8" fill="currentColor" stroke="none"/></svg></a>
+        <a data-platform="tiktok" href="https://nexvora-ux.github.io/floreria-rosalinda/" target="_blank" rel="noopener noreferrer" aria-label="TikTok" title="TikTok" class="social-link tiktok"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.8 2c.3 2.5 1.8 4 4.2 4.2v3.4a9.6 9.6 0 0 1-4.2-1.2v6.7c0 4.1-2.6 6.9-6.6 6.9A6.3 6.3 0 0 1 3.9 15.7c0-3.9 3-6.6 7-6.4v3.5c-2-.4-3.5.8-3.5 2.7 0 1.7 1.2 2.8 2.8 2 0 3-1.5 3-3.4V2h3.6Z"/></svg></a>
+      </div>
+      <div class="footer-tools"><button type="button" id="footerShareRosalinda">↗ Compartir enlace y QR</button><button type="button" id="footerInstallRosalinda">＋ Instalar tienda</button></div>
+    </div>
+  </div>
+  <div class="footer-bottom"><small>© <span id="year"></span> Florería Rosalinda · Todos los derechos reservados.</small><span>Hecho con amor, flor a flor ♡</span></div>
+</footer>
 <div class="float-contact"><button class="float-wa" data-whatsapp="general">◉ <span>Pedir por WhatsApp</span></button><button class="float-help" id="helpBtn" aria-label="Contacto">☏</button></div><div class="bottom-nav"><button data-route="home">⌂<span>Inicio</span></button><button data-route="catalog">▦<span>Catálogo</span></button><button class="bottom-wa" data-whatsapp="general">◉<span>WhatsApp</span></button><button id="bottomFav">♡<span>Favoritos</span></button><button id="bottomContact">☏<span>Contacto</span></button></div>
-<div id="overlay" class="overlay" hidden><div class="dialog" role="dialog" aria-modal="true"><button id="closeOverlay" class="dialog-close" aria-label="Cerrar">×</button><div id="dialogContent"></div></div></div><script src="app.js"></script><script src="social-pwa.js" defer></script></body></html>
