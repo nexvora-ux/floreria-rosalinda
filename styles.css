@@ -26,7 +26,7 @@
  .promos-images .full-promo-link{aspect-ratio:529 / 318;border-radius:11px}
 }
 
-/* Rosalinda: redes sociales, compartir, instalación (2026) */
+/* Rosalinda: redes sociales, compartir, instalaciÃ³n (2026) */
 .rosalinda-connect{max-width:1200px;margin:12px auto 22px;padding:12px 16px;background:linear-gradient(105deg,#fff4f7,#fff);border:1px solid #f7dce6;border-radius:18px;display:flex;gap:16px;justify-content:space-between;align-items:center;flex-wrap:wrap}
 .rosalinda-social-icons,.rosalinda-share-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.connect-title{font-size:13px;font-weight:800;color:#75213a;margin-right:4px}
 .social-link{width:39px;height:39px;border-radius:13px;display:inline-flex;align-items:center;justify-content:center;color:white;text-decoration:none;transition:transform .2s;box-shadow:0 3px 9px #4b1a2920}.social-link:hover{transform:translateY(-2px)}.social-link svg{height:22px;width:22px}.social-link.facebook{background:#1877f2}.social-link.instagram{background:linear-gradient(45deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5)}.social-link.tiktok{background:#111}
@@ -34,7 +34,7 @@
 .rosalinda-share-dialog h2{font-family:'Playfair Display',serif;color:#6b1235;margin:0 0 8px}.rosalinda-share-dialog p{margin:0 0 12px;color:#593749}.rosalinda-share-dialog .qr-image{width:min(260px,85%);height:auto;display:block;margin:14px auto;border:10px solid white;box-shadow:0 2px 16px #00000012;border-radius:12px}.rosalinda-share-dialog .share-url{overflow-wrap:anywhere;padding:10px;background:#fdf2f5;border-radius:8px;font-size:12px}.rosalinda-share-dialog .share-buttons{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:15px}.rosalinda-share-dialog .share-buttons button{padding:12px 16px;border:0;border-radius:22px;background:#ef3162;color:#fff;font:inherit;font-weight:700;cursor:pointer}.rosalinda-share-dialog .share-buttons button:last-child{background:#7b2144}
 @media(max-width:680px){.rosalinda-connect{margin:9px 10px 14px;padding:12px;display:flex;flex-direction:column;gap:12px;align-items:stretch}.rosalinda-social-icons,.rosalinda-share-actions{justify-content:center}.social-link{width:44px;height:44px;border-radius:14px}.social-link svg{height:25px;width:25px}.rosalinda-share-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}.share-tienda,.install-tienda{padding:11px 7px;font-size:12px}.footer-tools{justify-content:center}}
 
-/* === FOOTER ROSALINDA: ubicación y contacto === */
+/* === FOOTER ROSALINDA: ubicaciÃ³n y contacto === */
 footer.rosalinda-footer{display:block;max-width:1320px;margin:12px auto 0;padding:30px 30px 105px;border-top:1px solid #efd8df;background:linear-gradient(160deg,#fffafd 0%,#fff1f5 100%);border-radius:24px 24px 0 0;color:#59172f}
 .rosalinda-footer .footer-main{display:grid;grid-template-columns:1.05fr 1fr 1fr;gap:26px;align-items:start}
 .rosalinda-footer .footer-column{min-width:0}
@@ -59,7 +59,7 @@ footer.rosalinda-footer{display:block;max-width:1320px;margin:12px auto 0;paddin
 @media(max-width:680px){footer.rosalinda-footer{margin:8px 10px 0;padding:22px 18px 130px;border-radius:20px 20px 0 0}.rosalinda-footer .footer-main{grid-template-columns:1fr;gap:23px}.rosalinda-footer .footer-community{grid-column:auto}.rosalinda-footer .footer-column{padding-bottom:20px;border-bottom:1px solid #f0dce3}.rosalinda-footer .footer-column:last-child{border:0;padding-bottom:0}.rosalinda-footer .footer-logo img{width:78px;height:70px}.rosalinda-footer .footer-main-wa,.rosalinda-footer .footer-map-btn{width:100%}.rosalinda-footer .footer-socials{justify-content:flex-start}.rosalinda-footer .footer-tools{display:grid;grid-template-columns:1fr 1fr}.rosalinda-footer .footer-bottom{margin-top:18px;display:block}.rosalinda-footer .footer-bottom span{display:block;margin-top:7px}}
 
 
-/* ROSALINDA — FOOTER VINO PREMIUM (2026-11) */
+/* ROSALINDA â€” FOOTER VINO PREMIUM (2026-11) */
 footer.rosalinda-footer {
   color:#fff !important;
   background:linear-gradient(132deg,#390919 0%,#6a0e32 46%,#8a1946 100%) !important;
@@ -108,4 +108,53 @@ footer.rosalinda-footer::before {
  .rosalinda-footer .footer-column:last-child{border-bottom:0 !important;}
  .rosalinda-footer .footer-map-btn{max-width:none}
  .rosalinda-footer .footer-socials{gap:16px;}
+}
+
+
+/* === ROSALINDA: AJUSTES MÃ“VIL Y FOOTER FINAL === */
+.ui-icon{display:inline-block;width:21px;height:21px;flex-shrink:0;vertical-align:middle}
+/* Evitar duplicar los accesos de redes fuera del pie de pÃ¡gina */
+.rosalinda-connect{display:none !important}
+/* Beneficios: medallones vino + sÃ­mbolos blancos */
+.benefits .benefit-icon{background:#65122f!important;color:#fff!important;box-shadow:0 5px 14px rgba(64,6,28,.18)}
+.benefits .benefit-icon .ui-icon{width:26px;height:26px}
+/* Iconos reconocibles en contactos del footer */
+.rosalinda-footer .footer-column h3{display:flex;align-items:center;gap:8px}
+.rosalinda-footer .footer-column h3 .ui-icon{color:#f8dbab}
+.rosalinda-footer .footer-main-wa,.rosalinda-footer .footer-map-btn,
+.rosalinda-footer .footer-tel,.rosalinda-footer .footer-tools button{display:inline-flex;align-items:center;justify-content:center;gap:9px}
+.rosalinda-footer .footer-tools button .ui-icon{width:19px;height:19px}
+.rosalinda-footer .footer-tel{justify-content:flex-start;color:white!important}
+.rosalinda-footer .footer-socials .social-link{background:rgba(255,255,255,.14)!important;color:#fff!important;border:1px solid rgba(255,255,255,.42)!important}
+.rosalinda-footer .footer-socials .social-link svg{fill:currentColor}
+.rosalinda-footer .footer-socials .social-link.instagram svg{fill:none}
+/* Todos los botones de pedido siguen usando los mismos eventos existentes. */
+button[data-whatsapp],.order,button[data-order]{align-items:center;justify-content:center;gap:7px}
+.order{display:flex}
+.order span{display:none!important}
+.order::before,.dialog button[data-whatsapp]::before,.dialog button[data-order]::before{
+ content:"";display:inline-block;width:17px;height:17px;flex:0 0 17px;
+ background:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22white%22%20d%3D%22M20.52%203.48A11.85%2011.85%200%200%200%2012.06%200C5.46%200%20.09%205.36.09%2011.97c0%202.1.55%204.16%201.6%205.98L0%2024l6.2-1.62a11.9%2011.9%200%200%200%205.86%201.5h.01c6.6%200%2011.97-5.37%2011.97-11.97a11.9%2011.9%200%200%200-3.52-8.43ZM12.07%2021.87c-1.83%200-3.63-.49-5.2-1.42l-.37-.22-3.68.96.98-3.59-.24-.37a9.86%209.86%200%200%201-1.52-5.26c0-5.5%204.48-9.98%209.99-9.98a9.93%209.93%200%200%201%207.07%202.93%209.93%209.93%200%200%201%202.92%207.06c0%205.51-4.48%209.99-9.95%209.99Zm5.48-7.48c-.3-.15-1.77-.88-2.04-.98-.27-.1-.47-.15-.67.15-.2.3-.77.98-.95%201.18-.17.2-.35.23-.65.08a8.1%208.1%200%200%201-2.4-1.48%209.1%209.1%200%200%201-1.67-2.09c-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.38-.03-.53-.07-.15-.67-1.61-.92-2.2-.25-.58-.49-.5-.67-.5h-.57c-.2%200-.52.07-.8.37-.27.3-1.04%201.02-1.04%202.48s1.07%202.87%201.22%203.07c.15.2%202.1%203.21%205.1%204.5.71.3%201.27.49%201.7.62.72.23%201.37.2%201.88.12.57-.09%201.77-.72%202.02-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35Z%22%2F%3E%3C%2Fsvg%3E") center/contain no-repeat;
+}
+.dialog button[data-whatsapp],.dialog button[data-order]{display:flex;align-items:center;justify-content:center;gap:7px}
+/* Estos dos diÃ¡logos antiguos generan el carÃ¡cter â—‰ desde app.js.
+   Se esconde solo su sÃ­mbolo inicial, sin cambiar el botÃ³n ni su evento. */
+.float-wa,.footer-main-wa,.nav-wa{display:inline-flex;align-items:center;justify-content:center;gap:9px}
+.float-wa .ui-icon,.footer-main-wa .ui-icon,.nav-wa .ui-icon{height:21px;width:21px}
+.float-help{display:flex;align-items:center;justify-content:center}
+.float-help .ui-icon{width:23px;height:23px}
+/* Barra de navegaciÃ³n mÃ³vil: vino oscuro + Ã­conos y letras blancas. */
+@media(max-width:680px){
+ .promos.promos-images{display:grid!important;grid-template-columns:minmax(0,1fr)!important;gap:0;margin:14px 0 25px}
+ .promos.promos-images .full-promo-link:first-child{display:none!important}
+ .promos.promos-images .full-promo-link:last-child{display:block!important;width:100%;aspect-ratio:529/318;border-radius:16px}
+ .bottom-nav{background:linear-gradient(110deg,#3e081e,#670d31 65%,#7e1943)!important;border-top:1px solid #ad6480;box-shadow:0 -8px 30px #3d091d50;padding:9px 2px max(9px,env(safe-area-inset-bottom))!important}
+ .bottom-nav button{color:#fff!important;min-width:0;gap:4px!important;font-size:15px!important;background:transparent!important}
+ .bottom-nav button span{color:#fff!important;font-size:10px!important;font-weight:700}
+ .bottom-nav .ui-icon{width:23px;height:23px;stroke:currentColor}
+ .bottom-nav .bottom-wa .icon-whatsapp{width:24px;height:24px;fill:currentColor}
+ .bottom-nav button:focus-visible{outline:2px solid #fff;outline-offset:-2px;border-radius:12px}
+ .benefits .benefit-icon{height:48px;width:48px}
+ .benefits .benefit-icon .ui-icon{width:25px;height:25px}
+ footer.rosalinda-footer{padding-bottom:132px}
 }
