@@ -1,8 +1,6 @@
-// CONFIGURACIÓN DE FLORERÍA ROSALINDA
-// WhatsApp: escribe el número con código de país, sin + ni espacios. Ejemplo Perú: 519XXXXXXXX.
 window.ROSALINDA_CONFIG = {
-  whatsapp: "",
-  telefono: "",
+  whatsapp: "51907541882",
+  telefono: "907541882",
   facebook: "",
   instagram: "",
   tiktok: "",
