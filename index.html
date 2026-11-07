@@ -5,31 +5,36 @@
 /* Libera el espacio que antes ocupaba el texto del encabezado. */
 #logoLink { min-width: 0; }
 
-/* LOGO SUPERIOR Y FOOTER - PC */
-header.top .brand img {
+
+/* LOGO SUPERIOR - PC */
+#logoLink img {
   width: 180px !important;
   height: auto !important;
   max-width: 100% !important;
+  object-fit: contain !important;
 }
 
-footer .footer-brand img {
+/* LOGO FOOTER - PC */
+.rosalinda-footer .footer-logo img {
   width: 210px !important;
   height: auto !important;
   max-width: 100% !important;
+  object-fit: contain !important;
 }
 
 /* LOGOS EN CELULARES */
 @media (max-width: 767px) {
-  header.top .brand img {
+  #logoLink img {
     width: 125px !important;
     height: auto !important;
   }
 
-  footer .footer-brand img {
+  .rosalinda-footer .footer-logo img {
     width: 160px !important;
     height: auto !important;
   }
 }
+
   
 </style></head><body>
 <header class="top"><div class="header-inner"><a href="#inicio" class="brand" id="logoLink"><img src="assets/logo.png" alt="Florería Rosalinda"/><span><strong>Rosalinda</strong><small>F L O R E R Í A</small></span></a><div class="desktop-search"><label class="search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m16 16 5 5"/></svg><input class="query" placeholder="Buscar flores, arreglos, regalos, eventos..." aria-label="Buscar productos"></label></div><div class="head-actions"><button class="icon-button" id="favBtn" title="Favoritos" aria-label="Ver favoritos">♡<span class="count" id="favCount" hidden>0</span></button><button class="icon-button" id="contactBtn" aria-label="Contáctanos" title="Contacto">☏</button><button class="icon-button mobile-menu" id="menuBtn" aria-label="Abrir menú">☰</button></div></div></header>
