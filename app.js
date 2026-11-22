@@ -8,7 +8,40 @@ try{state.saved=new Set(JSON.parse(localStorage.getItem('rosalinda-favoritos')||
 function openModal(html){$('#dialogContent').innerHTML=html;$('#overlay').hidden=false;document.body.style.overflow='hidden'}
 function closeModal(){$('#overlay').hidden=true;document.body.style.overflow=''}
 function contact(){openModal(`<h2>Hablemos de flores 🌹</h2><p>En Rosalinda estamos para ayudarte a elegir un arreglo especial.</p><button class="action primary" data-whatsapp="general">◉ Consultar por WhatsApp</button>${config.telefono?`<a href="tel:${escapeHtml(config.telefono)}">☎ Llamar: ${escapeHtml(config.telefono)}</a>`:''}${['facebook','instagram','tiktok'].filter(n=>config[n]).map(n=>`<a target="_blank" rel="noopener noreferrer" href="${escapeHtml(config[n])}">${n.toUpperCase()}</a>`).join('')}<p class="counter-note">${escapeHtml(config.ciudad||'')}</p>`)}
-function whatsapp(product){if(!/^\d{10,15}$/.test(String(config.whatsapp||''))){openModal('<h2>WhatsApp por configurar</h2><p>Antes de publicar, escribe el número oficial de la florería en el archivo <b>config.js</b>, en el campo <b>whatsapp</b> (código de país + número, sin símbolos).</p><p>Así los pedidos llegarán directamente al negocio y no se enviarán a un número equivocado.</p>');return}let msg;if(product){const imageUrl=new URL(product.image,'https://floreriarosalinda.com/').href;msg=`Hola, Florería Rosalinda 🌹. Quiero cotizar el arreglo ${product.name} (código ${product.code}).\n📸 Fotografía: ${imageUrl}\n¿Podrían indicarme el precio y la disponibilidad?`}else{msg='Hola, Florería Rosalinda 🌹. Me gustaría consultar por sus arreglos florales.'}window.open(`https://wa.me/${config.whatsapp}?text=${encodeURIComponent(msg)}`,'_blank','noopener,noreferrer')}
+
+function whatsapp(product) {
+  if (!/^\d{10,15}$/.test(String(config.whatsapp || ''))) {
+    openModal('<h2>WhatsApp por configurar</h2><p>Configura el número oficial de la florería en config.js.</p>');
+    return;
+  }
+
+  let msg;
+
+  if (product) {
+    const imageUrl = new URL(
+      product.image,
+      'https://floreriarosalinda.com/'
+    ).href;
+
+    msg = `Hola, Florería Rosalinda 🌹.
+
+Quiero cotizar el siguiente arreglo floral:
+
+🌸 Producto: ${product.name}
+🏷️ Código: ${product.code}
+📸 Fotografía: ${imageUrl}
+
+¿Me pueden brindar el precio y disponibilidad?`;
+  } else {
+    msg = 'Hola, Florería Rosalinda 🌹. Me gustaría consultar por sus arreglos florales.';
+  }
+
+  window.open(
+    `https://wa.me/${config.whatsapp}?text=${encodeURIComponent(msg)}`,
+    '_blank',
+    'noopener,noreferrer'
+  );
+}
 function updateFavCount(){let el=$('#favCount');el.textContent=state.saved.size;el.hidden=!state.saved.size}
 function setSlide(i){state.slide=(i+3)%3;$$('.slide').forEach((e,j)=>e.classList.toggle('active',j===state.slide));$$('#heroDots button').forEach((e,j)=>e.classList.toggle('on',j===state.slide))}
 function renderChips(){const html=`<button data-category="all" class="${state.category==='all'?'selected':''}">Todos</button>`+state.categories.map(c=>`<button data-category="${c.id}" class="${state.category===c.id?'selected':''}" title="${escapeHtml(c.count)} productos">${escapeHtml(c.name)}</button>`).join('');$('#chips').innerHTML=html}
